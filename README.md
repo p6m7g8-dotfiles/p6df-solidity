@@ -1,12 +1,42 @@
 # p6df-solidity
 
-## LICENSE
+## Table of Contents
+
+
+### p6df-solidity
+- [p6df-solidity](#p6df-solidity)
+  - [Badges](#badges)
+  - [Distributions](#distributions)
+  - [Summary](#summary)
+  - [Contributing](#contributing)
+  - [Code of Conduct](#code-of-conduct)
+  - [Changes](#changes)
+    - [Usage](#usage)
+  - [Author](#author)
+
+### Badges
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/p6m7g8/p6df-solidity)
+[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/p6m7g8/p6df-solidity/&style=flat)](https://mergify.io)
+[![codecov](https://codecov.io/gh/p6m7g8/p6df-solidity/branch/master/graph/badge.svg?token=14Yj1fZbew)](https://codecov.io/gh/p6m7g8/p6df-solidity)
+[![Known Vulnerabilities](https://snyk.io/test/github/p6m7g8/p6df-solidity/badge.svg?targetFile=package.json)](https://snyk.io/test/github/p6m7g8/p6df-solidity?targetFile=package.json)
+[![Gihub repo dependents](https://badgen.net/github/dependents-repo/p6m7g8/p6df-solidity)](https://github.com/p6m7g8/p6df-solidity/network/dependents?dependent_type=REPOSITORY)
+[![Gihub package dependents](https://badgen.net/github/dependents-pkg/p6m7g8/p6df-solidity)](https://github.com/p6m7g8/p6df-solidity/network/dependents?dependent_type=PACKAGE)
 
-## Other
+## Summary
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/p6m7g8-dotfiles/p6df-solidity) ![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=p6m7g8_p6-cdk-namer&metric=alert_status) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/p6m7g8-dotfiles/p6df-solidity) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/p6m7g8-dotfiles/p6df-solidity)
+## Contributing
+
+- [How to Contribute](CONTRIBUTING.md)
+
+## Code of Conduct
+
+- [Code of Conduct](https://github.com/p6m7g8/.github/blob/master/CODE_OF_CONDUCT.md)
+
+## Changes
+
+- [Change Log](CHANGELOG.md)
 
 ## Usage
 
@@ -15,9 +45,12 @@
 #### p6df-solidity/init.zsh:
 
 - p6df::modules::solidity::brew()
+- p6df::modules::solidity::clones()
 - p6df::modules::solidity::deps()
 - p6df::modules::solidity::langs()
 - p6df::modules::solidity::vscodes()
+
+
 
 ## Author
 
