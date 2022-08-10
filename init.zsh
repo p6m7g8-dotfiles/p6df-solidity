@@ -1,29 +1,15 @@
+# shellcheck shell=bash
 ######################################################################
 #<
 #
 # Function: p6df::modules::solidity::deps()
 #
-#  Depends:	 p6_github
 #>
 ######################################################################
 p6df::modules::solidity::deps() {
   ModuleDeps=(
-    p6m7g8-dotfiles/p6common
-    ethereum/solidity
+    p6m7g8-dotfiles/p6df-github
   )
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::solidity::langs()
-#
-#  Depends:	 p6_js
-#>
-######################################################################
-p6df::modules::solidity::langs() {
-
-  p6_js_npm_global_install "solc"
 }
 
 ######################################################################
@@ -37,6 +23,22 @@ p6df::modules::solidity::brew() {
 
   brew tap ethereum/ethereum
   brew install solidity
+
+  p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: p6df::modules::solidity::langs()
+#
+#>
+######################################################################
+p6df::modules::solidity::langs() {
+
+  p6_js_npm_global_install "solc"
+
+  p6_return_void
 }
 
 ######################################################################
@@ -44,6 +46,7 @@ p6df::modules::solidity::brew() {
 #
 # Function: p6df::modules::solidity::vscodes()
 #
+#  Environment:	 LLL
 #>
 ######################################################################
 p6df::modules::solidity::vscodes() {
@@ -54,11 +57,28 @@ p6df::modules::solidity::vscodes() {
   code --install-extension tintinweb.solidity-visual-auditor
   code --install-extension tintinweb.vscode-solidity-flattener
   code --install-extension tintinweb.vscode-solidity-language
-  code --install-extensiontintinweb.ethereum-security-bundle
-  code --install-extensiontintinweb.graphviz-interactive-preview
-  code --install-extensiontintinweb.solidity-metrics
-  code --install-extensiontintinweb.vscode-ethover
-  code --install-extensiontintinweb.vscode-inline-bookmarks
-  code --install-extensiontintinweb.vscode-LLL
-  code --install-extensiontintinweb.vscode-vyper
+  code --install-extension tintinweb.ethereum-security-bundle
+  code --install-extension tintinweb.graphviz-interactive-preview
+  code --install-extension tintinweb.solidity-metrics
+  code --install-extension tintinweb.vscode-ethover
+  code --install-extension tintinweb.vscode-inline-bookmarks
+  code --install-extension tintinweb.vscode-LLL
+  code --install-extension tintinweb.vscode-vyper
+
+  p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: p6df::modules::solidity::clones()
+#
+#  Environment:	 P6_DFZ_SRC_DIR
+#>
+######################################################################
+p6df::modules::solidity::clones() {
+
+  p6_github_login_clone "ethereum" "$P6_DFZ_SRC_DIR"
+
+  p6_return_void
 }
