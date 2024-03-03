@@ -73,12 +73,12 @@ p6df::modules::solidity::vscodes() {
 #
 # Function: p6df::modules::solidity::clones()
 #
-#  Environment:	 P6_DFZ_SRC_DIR
+#  Environment:	 P6_DFZ_SRC_FOCUSED_DIR
 #>
 ######################################################################
 p6df::modules::solidity::clones() {
 
-  p6_github_login_clone "ethereum" "$P6_DFZ_SRC_DIR"
+  p6_github_login_clone "ethereum" "$P6_DFZ_SRC_FOCUSED_DIR"
 
   p6_return_void
 }
