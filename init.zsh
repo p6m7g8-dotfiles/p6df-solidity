@@ -46,7 +46,6 @@ p6df::modules::solidity::langs() {
 #
 # Function: p6df::modules::solidity::vscodes()
 #
-#  Environment:	 LLL
 #>
 ######################################################################
 p6df::modules::solidity::vscodes() {
