@@ -50,19 +50,19 @@ p6df::modules::solidity::langs() {
 ######################################################################
 p6df::modules::solidity::vscodes() {
 
-  code --install-extension Aniket-Engg.sol-profiler-vscode
-  code --install-extension JuanBlanco.solidity
-  code --install-extension MythX.mythxvsc
-  code --install-extension tintinweb.solidity-visual-auditor
-  code --install-extension tintinweb.vscode-solidity-flattener
-  code --install-extension tintinweb.vscode-solidity-language
-  code --install-extension tintinweb.ethereum-security-bundle
-  code --install-extension tintinweb.graphviz-interactive-preview
-  code --install-extension tintinweb.solidity-metrics
-  code --install-extension tintinweb.vscode-ethover
-  code --install-extension tintinweb.vscode-inline-bookmarks
-  code --install-extension tintinweb.vscode-LLL
-  code --install-extension tintinweb.vscode-vyper
+  p6df::modules::vscode::extension::install Aniket-Engg.sol-profiler-vscode
+  p6df::modules::vscode::extension::install JuanBlanco.solidity
+  p6df::modules::vscode::extension::install MythX.mythxvsc
+  p6df::modules::vscode::extension::install tintinweb.solidity-visual-auditor
+  p6df::modules::vscode::extension::install tintinweb.vscode-solidity-flattener
+  p6df::modules::vscode::extension::install tintinweb.vscode-solidity-language
+  p6df::modules::vscode::extension::install tintinweb.ethereum-security-bundle
+  p6df::modules::vscode::extension::install tintinweb.graphviz-interactive-preview
+  p6df::modules::vscode::extension::install tintinweb.solidity-metrics
+  p6df::modules::vscode::extension::install tintinweb.vscode-ethover
+  p6df::modules::vscode::extension::install tintinweb.vscode-inline-bookmarks
+  p6df::modules::vscode::extension::install tintinweb.vscode-LLL
+  p6df::modules::vscode::extension::install tintinweb.vscode-vyper
 
   p6_return_void
 }
