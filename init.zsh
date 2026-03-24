@@ -21,7 +21,7 @@ p6df::modules::solidity::deps() {
 ######################################################################
 p6df::modules::solidity::brew() {
 
-  brew tap ethereum/ethereum
+  p6df::core::homebrew::cmd::brew tap ethereum/ethereum
   p6df::core::homebrew::cli::brew::install solidity
 
   p6_return_void
