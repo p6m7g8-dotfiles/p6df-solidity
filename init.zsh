@@ -15,11 +15,11 @@ p6df::modules::solidity::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::solidity::brew()
+# Function: p6df::modules::solidity::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::solidity::brew() {
+p6df::modules::solidity::external::brews() {
 
   p6df::core::homebrew::cmd::brew tap ethereum/ethereum
   p6df::core::homebrew::cli::brew::install solidity
@@ -80,4 +80,20 @@ p6df::modules::solidity::clones() {
   p6_github_cli_parallel_clone "ethereum" "$P6_DFZ_SRC_FOCUSED_DIR"
 
   p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: words solidity $SOLC_VERSION = p6df::modules::solidity::profile::mod()
+#
+#  Returns:
+#	words - solidity $SOLC_VERSION
+#
+#  Environment:	 SOLC_VERSION
+#>
+######################################################################
+p6df::modules::solidity::profile::mod() {
+
+  p6_return_words 'solidity' "$"
 }
