@@ -95,5 +95,5 @@ p6df::modules::solidity::clones() {
 ######################################################################
 p6df::modules::solidity::profile::mod() {
 
-  p6_return_words 'solidity' '$SOLC_VERSION'
+  p6_return_words 'solidity' "$"
 }
