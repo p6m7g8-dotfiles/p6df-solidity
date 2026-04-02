@@ -39,6 +39,7 @@ TODO: Add a short summary of this module.
 - `p6df::modules::solidity::clones()`
 - `p6df::modules::solidity::deps()`
 - `p6df::modules::solidity::langs()`
+- `words solidity $SOLC_VERSION = p6df::modules::solidity::profile::mod()`
 - `p6df::modules::solidity::vscodes()`
 
 ## Hierarchy
