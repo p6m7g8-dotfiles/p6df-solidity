@@ -35,12 +35,12 @@ TODO: Add a short summary of this module.
 
 ##### p6df-solidity/init.zsh
 
-- `p6df::modules::solidity::brew()`
 - `p6df::modules::solidity::clones()`
 - `p6df::modules::solidity::deps()`
+- `p6df::modules::solidity::external::brews()`
 - `p6df::modules::solidity::langs()`
-- `words solidity $SOLC_VERSION = p6df::modules::solidity::profile::mod()`
 - `p6df::modules::solidity::vscodes()`
+- `words solidity = p6df::modules::solidity::profile::mod()`
 
 ## Hierarchy
 
