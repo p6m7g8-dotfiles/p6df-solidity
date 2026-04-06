@@ -85,10 +85,10 @@ p6df::modules::solidity::clones() {
 ######################################################################
 #<
 #
-# Function: words solidity $SOLC_VERSION = p6df::modules::solidity::profile::mod()
+# Function: words solidity = p6df::modules::solidity::profile::mod()
 #
 #  Returns:
-#	words - solidity $SOLC_VERSION
+#	words - solidity
 #
 #  Environment:	 SOLC_VERSION
 #>
